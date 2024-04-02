@@ -1,0 +1,57 @@
+.active-state {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    transform: translateY(-40px);
+    border-radius: 6px;
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.active-state.show {
+    visibility: visible;
+    transform: translateY(-30px);
+}
+
+.active-state__tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.active-state__tag {
+    display: flex;
+    align-items: stretch;
+}
+
+.active-state__tag span {
+    background-color: var(--bg-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.active-state__tag button {
+    background-color: var(--color-Dark-grayish);
+    padding: 10px;
+    color: white;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+}
+
+.active-state__clear button{
+    background-color: transparent;
+    color: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.active-state__clear button:hover {
+    text-decoration: underline;
+}

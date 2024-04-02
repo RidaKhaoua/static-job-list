@@ -1,0 +1,15 @@
+.image {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:771px) {
+    .image {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        top: -68px;
+        left: -6px;
+    }
+}
